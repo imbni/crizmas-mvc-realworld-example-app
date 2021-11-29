@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crizmas-deployment
+spec:
+  selector:
+    matchLabels:
+      app: crizmas
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: crizmas
+    spec:
+      containers:
+      - env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: rootpasswd
+        image: mbnism/crizmas
+        imagePullPolicy: Never
+        name: crizmas
+        ports:
+        - containerPort: 8080
