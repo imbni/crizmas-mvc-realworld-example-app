@@ -15,7 +15,7 @@ This codebase was created to demonstrate a fully fledged fullstack application b
 4. open http://localhost:8080/
 
 
-## To run it in your local kubernetes custer:
+## To run it in your local kubernetes cluster:
 
 1. Clone repo
 2. `cd crizmas-mvc-realworld-example-app` 
